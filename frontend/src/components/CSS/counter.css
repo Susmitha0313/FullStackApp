@@ -1,0 +1,96 @@
+/* General styling
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: rgb(249, 252, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+} */
+.counter-page{
+display: flex;
+justify-content: center;
+margin-top: 200px;
+
+}
+
+/* Main container */
+.counter-container {
+  text-align: center;
+  background-color: rgb(45, 169, 218); /* Transparent white background */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+/* Title */
+.counter-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Counter box */
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Counter value display */
+.counter-display {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly shaded for contrast */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Buttons */
+.counter-button {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.counter-button:hover {
+  transform: scale(1.05);
+}
+
+.counter-button:active {
+  transform: scale(0.95);
+}
+
+.counter-button:nth-child(1) {
+  background: #ff6f61;
+}
+
+.counter-button:nth-child(2) {
+  background: #6a67ce;
+}
+
+.reset-button {
+  background: #f4a261;
+}
+
+.counter-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}

@@ -1,0 +1,39 @@
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: rgb(46, 46, 46);
+  padding: 0.5rem 1rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.header .logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 1rem;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 113, 206);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #d9f0d9;
+}
+
+
