@@ -49,6 +49,49 @@ FRONTEND SETUP(Using Vite)
 
 
 API DOCUMENTATION
+Appointment Booking:
+GET : /api/booking/slots - Get all the slots for booking
+POST : /api/booking/book - Book an appointment
+
+
+Request/Response Formats
+
+1. POST /api/booking/book
+{
+  "name": "John Doe",
+  "phone": "9876543210",
+  "date": "2025-01-10",
+  "timeSlot": "10:00 AM - 11:00 AM"
+}
+
+Response (Success)
+{
+  "status": "success",
+  "message": "Appointment booked successfully!",
+  "appointment": {
+    "_id": "64d96e2a579af317a936d35b",
+    "name": "John Doe",
+    "phone": "9876543210",
+    "date": "2025-01-10",
+    "timeSlot": "10:00 AM - 11:00 AM",
+    "createdAt": "2025-01-08T07:58:05.651Z"
+  }
+}
+
+Response (Error)
+
+{ "error": "This slot is already booked." }
+
+
+
+
+
+
+
+
+
+
+
   Task Management:
     POST /api/addTask - Add a new Task.
     GET /api/:taskId- Fetch all tasks
