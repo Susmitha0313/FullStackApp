@@ -16,15 +16,15 @@ const Home = () => {
             <Link to="/counter">Counter</Link>
           </button>
           <button>
-            <Link to="/#">Others</Link>
+            <Link to="/booking">Appointment Booking</Link>
           </button>
         </aside>
-      <section className="content">
-        <h3>Welcome!</h3>
-        <p>
-          Use the sidebar buttons to navigate to different tools and sections.
-        </p>
-      </section>
+        <section className="content">
+          <h3>Welcome!</h3>
+          <p>
+            Use the sidebar buttons to navigate to different tools and sections.
+          </p>
+        </section>
       </main>
     </>
   );

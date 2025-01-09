@@ -3,6 +3,7 @@ const dotenv = require('dotenv').config();
 const cors = require("cors");
 const connectDB = require('./database/database');
 const taskRouter = require("./routes/taskRoute");
+const bookingRouter = require('./routes/bookingRouter');
 
 
 const app = express();
@@ -10,6 +11,7 @@ connectDB();
 app.use(express.json()); // Parses incoming JSON payloads
 app.use(cors());
 app.use("/api", taskRouter);
+app.use("/api/booking", bookingRouter);
 
 app.get('/',(req, res)=> {
     res.send('<h1>Hello , express server!</h1>');
